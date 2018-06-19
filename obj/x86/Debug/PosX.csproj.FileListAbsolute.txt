@@ -1,0 +1,14 @@
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.csprojResolveAssemblyReference.cache
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.FormMain.resources
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.Properties.Resources.resources
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.csproj.GenerateResource.Cache
+C:\Users\logon\Documents\Git\PosX\PosX\bin\Debug\PosX.exe
+C:\Users\logon\Documents\Git\PosX\PosX\bin\Debug\PosX.pdb
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.exe
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.pdb
+C:\Users\logon\Documents\Git\PosX\PosX\bin\Debug\PosX.exe.config
+C:\Users\logon\Documents\Git\PosX\PosX\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\logon\Documents\Git\PosX\PosX\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.App.FormDashboard.resources
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.App.Normal.FormNormalMaster.resources
+C:\Users\logon\Documents\Git\PosX\PosX\obj\x86\Debug\PosX.App.Product.FormProductList.resources
