@@ -15,9 +15,33 @@ namespace PosX.App.Product
 {
     public partial class FormProductList : DockContent
     {
+        Color oddRow = Color.Transparent;
+        Color evenRow = Color.AliceBlue;
         public FormProductList()
         {
             InitializeComponent();
+           var orderInfo = new OrderInfoCollection();
+           mainGrid.DataSource = orderInfo.OrdersListDetails;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mainGrid_CurrentCellActivated(object sender, Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatedEventArgs e)
+        {
+            //e.DataRow.
+        }
+
+        private void mainGrid_QueryRowStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventArgs e)
+        {
+            if (e.RowType == RowType.DefaultRow && e.RowIndex % 2 == 0)
+                e.Style.BackColor = evenRow;
+            else
+                e.Style.BackColor = oddRow;   
+        }
+
+
     }
 }
