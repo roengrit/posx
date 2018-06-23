@@ -44,8 +44,8 @@ namespace PosX.App.Product
 
         private void FormProductList_Load(object sender, EventArgs e)
         {
-            cbUnit.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList("", "ic_unit");
-            cbCategory.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList("", "ic_category");
+            cbUnit.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList(string.Empty, "ic_unit");
+            cbCategory.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList(string.Empty, "ic_category");
             cbType.SelectedIndex = 0;
         }
 
