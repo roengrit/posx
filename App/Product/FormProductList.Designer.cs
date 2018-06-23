@@ -51,8 +51,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUnit = new System.Windows.Forms.Button();
+            this.btnCategory = new System.Windows.Forms.Button();
             this.cbUnit = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
@@ -64,6 +64,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -150,7 +152,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1432, 249);
+            this.panel1.Size = new System.Drawing.Size(1432, 289);
             this.panel1.TabIndex = 1;
             // 
             // groupBox2
@@ -159,9 +161,9 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 199);
+            this.groupBox2.Location = new System.Drawing.Point(0, 234);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1432, 50);
+            this.groupBox2.Size = new System.Drawing.Size(1432, 55);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "รายการสินค้า";
@@ -194,6 +196,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.cbType);
             this.groupBox1.Controls.Add(this.btnGenerate);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -202,8 +206,8 @@
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnUnit);
+            this.groupBox1.Controls.Add(this.btnCategory);
             this.groupBox1.Controls.Add(this.cbUnit);
             this.groupBox1.Controls.Add(this.cbCategory);
             this.groupBox1.Controls.Add(this.txtDescription);
@@ -217,7 +221,7 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.groupBox1.Size = new System.Drawing.Size(1432, 199);
+            this.groupBox1.Size = new System.Drawing.Size(1432, 234);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "รายละเอียดสินค้า";
@@ -234,7 +238,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(310, 157);
+            this.textBox3.Location = new System.Drawing.Point(310, 183);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(108, 20);
             this.textBox3.TabIndex = 30;
@@ -244,7 +248,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(310, 131);
+            this.textBox2.Location = new System.Drawing.Point(310, 157);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(108, 20);
             this.textBox2.TabIndex = 29;
@@ -262,7 +266,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(424, 161);
+            this.label13.Location = new System.Drawing.Point(424, 187);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(26, 13);
             this.label13.TabIndex = 27;
@@ -271,7 +275,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(424, 135);
+            this.label12.Location = new System.Drawing.Point(424, 161);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(26, 13);
             this.label12.TabIndex = 26;
@@ -280,7 +284,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(252, 160);
+            this.label10.Location = new System.Drawing.Point(252, 186);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 13);
             this.label10.TabIndex = 24;
@@ -289,45 +293,53 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(252, 134);
+            this.label9.Location = new System.Drawing.Point(252, 160);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 23;
             this.label9.Text = "ราคาซื้อ :";
             // 
-            // button2
+            // btnUnit
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(215, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(29, 22);
-            this.button2.TabIndex = 21;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUnit.Image = ((System.Drawing.Image)(resources.GetObject("btnUnit.Image")));
+            this.btnUnit.Location = new System.Drawing.Point(215, 183);
+            this.btnUnit.Name = "btnUnit";
+            this.btnUnit.Size = new System.Drawing.Size(29, 22);
+            this.btnUnit.TabIndex = 21;
+            this.btnUnit.UseVisualStyleBackColor = true;
+            this.btnUnit.Click += new System.EventHandler(this.btnUnit_Click);
             // 
-            // button1
+            // btnCategory
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(215, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 22);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
+            this.btnCategory.Location = new System.Drawing.Point(215, 156);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(29, 22);
+            this.btnCategory.TabIndex = 20;
+            this.btnCategory.UseVisualStyleBackColor = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // cbUnit
             // 
+            this.cbUnit.DisplayMember = "name";
+            this.cbUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbUnit.FormattingEnabled = true;
-            this.cbUnit.Location = new System.Drawing.Point(88, 158);
+            this.cbUnit.Location = new System.Drawing.Point(88, 184);
             this.cbUnit.Name = "cbUnit";
             this.cbUnit.Size = new System.Drawing.Size(125, 21);
             this.cbUnit.TabIndex = 19;
+            this.cbUnit.ValueMember = "id";
             // 
             // cbCategory
             // 
+            this.cbCategory.DisplayMember = "name";
+            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(88, 131);
+            this.cbCategory.Location = new System.Drawing.Point(88, 157);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(125, 21);
             this.cbCategory.TabIndex = 18;
+            this.cbCategory.ValueMember = "id";
             // 
             // txtDescription
             // 
@@ -350,7 +362,7 @@
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(41, 162);
+            this.Label7.Location = new System.Drawing.Point(41, 188);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(41, 13);
             this.Label7.TabIndex = 15;
@@ -359,7 +371,7 @@
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(16, 134);
+            this.Label5.Location = new System.Drawing.Point(16, 160);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(66, 13);
             this.Label5.TabIndex = 16;
@@ -395,9 +407,9 @@
             // 
             this.panel2.Controls.Add(this.mainGrid);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 285);
+            this.panel2.Location = new System.Drawing.Point(0, 325);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1432, 243);
+            this.panel2.Size = new System.Drawing.Size(1432, 203);
             this.panel2.TabIndex = 2;
             // 
             // mainGrid
@@ -412,9 +424,32 @@
             this.mainGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainGrid.Location = new System.Drawing.Point(0, 0);
             this.mainGrid.Name = "mainGrid";
-            this.mainGrid.Size = new System.Drawing.Size(1432, 243);
+            this.mainGrid.Size = new System.Drawing.Size(1432, 203);
             this.mainGrid.TabIndex = 2;
             this.mainGrid.QueryRowStyle += new Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventHandler(this.mainGrid_QueryRowStyle);
+            // 
+            // cbType
+            // 
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
+            "สินค้าทั่วไป",
+            "สินค้าบริการ",
+            "วัตถุดิบ",
+            "รายได้",
+            "ค่าใช้จ่าย"});
+            this.cbType.Location = new System.Drawing.Point(88, 131);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(362, 21);
+            this.cbType.TabIndex = 32;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 131);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "ประเภทสินค้า :";
             // 
             // FormProductList
             // 
@@ -426,6 +461,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormProductList";
             this.Text = "รายการสินค้า";
+            this.Load += new System.EventHandler(this.FormProductList_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -465,8 +501,8 @@
         internal System.Windows.Forms.TextBox txtProductName;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUnit;
+        private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.ComboBox cbUnit;
         private System.Windows.Forms.ComboBox cbCategory;
         internal System.Windows.Forms.Label label10;
@@ -477,6 +513,7 @@
         internal System.Windows.Forms.TextBox textBox3;
         internal System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnGenerate;
-
+        internal System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbType;
     }
 }

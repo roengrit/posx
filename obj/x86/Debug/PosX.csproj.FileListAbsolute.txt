@@ -60,3 +60,13 @@ C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\Syncfusion.SpellChecker.Ba
 C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
 C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.csproj.CoreCompileInputs.cache
 C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.csproj.CopyComplete
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\EntityFramework.dll
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\System.Data.SQLite.dll
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\EntityFramework.xml
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\System.Data.SQLite.xml
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\logon\Documents\Git\PosX\PosX\posx\bin\Debug\Data\posx.db

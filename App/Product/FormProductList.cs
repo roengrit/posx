@@ -20,8 +20,8 @@ namespace PosX.App.Product
         public FormProductList()
         {
             InitializeComponent();
-           var orderInfo = new OrderInfoCollection();
-           mainGrid.DataSource = orderInfo.OrdersListDetails;
+            var orderInfo = new OrderInfoCollection();
+            mainGrid.DataSource = orderInfo.OrdersListDetails;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -39,9 +39,28 @@ namespace PosX.App.Product
             if (e.RowType == RowType.DefaultRow && e.RowIndex % 2 == 0)
                 e.Style.BackColor = evenRow;
             else
-                e.Style.BackColor = oddRow;   
+                e.Style.BackColor = oddRow;
         }
 
+        private void FormProductList_Load(object sender, EventArgs e)
+        {
+            cbUnit.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList("", "ic_unit");
+            cbCategory.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList("", "ic_category");
+            cbType.SelectedIndex = 0;
+        }
 
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            var frm = new App.Normal.FormNormalMaster("ic_category");
+            frm.Text = "จัดการหมวดหมู่";
+            frm.ShowDialog();
+        }
+
+        private void btnUnit_Click(object sender, EventArgs e)
+        {
+            var frm = new App.Normal.FormNormalMaster("ic_unit");
+            frm.Text = "จัดการหน่วย";
+            frm.ShowDialog();
+        }
     }
 }
