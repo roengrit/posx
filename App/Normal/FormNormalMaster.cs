@@ -166,5 +166,28 @@ namespace PosX.App.Normal
                 this.itemAction.Name = val.Name;
             }
         }
+
+        private void btnEx_Click(object sender, EventArgs e)
+        {
+            this.Search(string.Empty);
+        }
+
+        private void mainGrid_CellClick(object sender, Syncfusion.WinForms.DataGrid.Events.CellClickEventArgs e)
+        {
+            try
+            {
+                var val = e.DataRow.RowData as NormalMaster;
+                this.itemAction = this.itemAction ?? new NormalMaster { };
+                if (val != null && !this.IsAddOrEdit)
+                {
+                    this.itemAction.Id = val.Id;
+                    this.itemAction.Name = val.Name;
+                }
+            }
+            catch (Exception)
+            {
+                 
+            }
+        }
     }
 }

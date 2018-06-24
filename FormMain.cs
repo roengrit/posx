@@ -39,5 +39,17 @@ namespace PosX
             var frm = new PosX.App.Product.FormProductList();
             frm.Show(dockPanel);
         }
+
+        private void mnCustomer_Click(object sender, EventArgs e)
+        {
+            var frm = new PosX.App.Member.FormCustomerList();
+            frm.Show(dockPanel);  
+        }
+
+        private void mnUser_Click(object sender, EventArgs e)
+        {
+            var frm = new PosX.App.User.FormUserList();
+            frm.Show(dockPanel);
+        }
     }
 }

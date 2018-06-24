@@ -15,6 +15,7 @@ namespace PosX
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
             Application.Run(new FormMain());
         }
     }

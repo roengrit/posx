@@ -1,6 +1,6 @@
-﻿namespace PosX.App.Product
+﻿namespace PosX.App.Member
 {
-    partial class FormProductList
+    partial class FormCustomerList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCustomerList));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnCancel = new System.Windows.Forms.ToolStripButton();
@@ -39,35 +39,34 @@
             this.btnClose = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnEx = new System.Windows.Forms.Button();
             this.lblRetCount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbType = new System.Windows.Forms.ComboBox();
-            this.txtSalePrice = new System.Windows.Forms.TextBox();
-            this.txtPurchasePrice = new System.Windows.Forms.TextBox();
-            this.txtProductCode = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtFacebook = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.txtLine = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtFax = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnUnit = new System.Windows.Forms.Button();
-            this.btnCategory = new System.Windows.Forms.Button();
-            this.cbUnit = new System.Windows.Forms.ComboBox();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTaxId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
-            this.btnEx = new System.Windows.Forms.Button();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -175,7 +174,17 @@
             this.groupBox2.Size = new System.Drawing.Size(1432, 55);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "รายการสินค้า";
+            this.groupBox2.Text = "รายการสมาชิก";
+            // 
+            // btnEx
+            // 
+            this.btnEx.Image = ((System.Drawing.Image)(resources.GetObject("btnEx.Image")));
+            this.btnEx.Location = new System.Drawing.Point(242, 18);
+            this.btnEx.Name = "btnEx";
+            this.btnEx.Size = new System.Drawing.Size(22, 22);
+            this.btnEx.TabIndex = 3;
+            this.btnEx.UseVisualStyleBackColor = true;
+            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // lblRetCount
             // 
@@ -206,26 +215,25 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.txtBarcode);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.cbType);
-            this.groupBox1.Controls.Add(this.txtSalePrice);
-            this.groupBox1.Controls.Add(this.txtPurchasePrice);
-            this.groupBox1.Controls.Add(this.txtProductCode);
-            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txtContact);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.txtFacebook);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtLine);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtFax);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.btnUnit);
-            this.groupBox1.Controls.Add(this.btnCategory);
-            this.groupBox1.Controls.Add(this.cbUnit);
-            this.groupBox1.Controls.Add(this.cbCategory);
-            this.groupBox1.Controls.Add(this.txtDescription);
+            this.groupBox1.Controls.Add(this.txtTel);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtTaxId);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtCode);
+            this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Label7);
-            this.groupBox1.Controls.Add(this.Label5);
-            this.groupBox1.Controls.Add(this.txtProductName);
+            this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.Label4);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -235,203 +243,189 @@
             this.groupBox1.Size = new System.Drawing.Size(1432, 234);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "รายละเอียดสินค้า";
+            this.groupBox1.Text = "รายละเอียดสมาขิก";
             // 
-            // label6
+            // txtContact
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 131);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "ประเภทสินค้า :";
+            this.txtContact.BackColor = System.Drawing.Color.White;
+            this.txtContact.Location = new System.Drawing.Point(308, 183);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(226, 20);
+            this.txtContact.TabIndex = 10;
             // 
-            // cbType
+            // label11
             // 
-            this.cbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbType.FormattingEnabled = true;
-            this.cbType.Items.AddRange(new object[] {
-            "สินค้าทั่วไป",
-            "สินค้าบริการ",
-            "วัตถุดิบ",
-            "รายได้",
-            "ค่าใช้จ่าย"});
-            this.cbType.Location = new System.Drawing.Point(88, 131);
-            this.cbType.Name = "cbType";
-            this.cbType.Size = new System.Drawing.Size(387, 21);
-            this.cbType.TabIndex = 3;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(254, 188);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "ติดต่อ :";
             // 
-            // txtSalePrice
+            // txtFacebook
             // 
-            this.txtSalePrice.BackColor = System.Drawing.Color.White;
-            this.txtSalePrice.Location = new System.Drawing.Point(310, 183);
-            this.txtSalePrice.Name = "txtSalePrice";
-            this.txtSalePrice.Size = new System.Drawing.Size(108, 20);
-            this.txtSalePrice.TabIndex = 7;
-            this.txtSalePrice.Text = "0.00";
-            this.txtSalePrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtSalePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalePrice_KeyPress);
-            // 
-            // txtPurchasePrice
-            // 
-            this.txtPurchasePrice.BackColor = System.Drawing.Color.White;
-            this.txtPurchasePrice.Location = new System.Drawing.Point(310, 157);
-            this.txtPurchasePrice.Name = "txtPurchasePrice";
-            this.txtPurchasePrice.Size = new System.Drawing.Size(108, 20);
-            this.txtPurchasePrice.TabIndex = 6;
-            this.txtPurchasePrice.Text = "0.00";
-            this.txtPurchasePrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtPurchasePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPurchasePrice_KeyPress);
-            // 
-            // txtProductCode
-            // 
-            this.txtProductCode.BackColor = System.Drawing.Color.White;
-            this.txtProductCode.Enabled = false;
-            this.txtProductCode.Location = new System.Drawing.Point(88, 22);
-            this.txtProductCode.Name = "txtProductCode";
-            this.txtProductCode.ReadOnly = true;
-            this.txtProductCode.Size = new System.Drawing.Size(156, 20);
-            this.txtProductCode.TabIndex = 28;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(424, 187);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 13);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "บาท";
+            this.txtFacebook.BackColor = System.Drawing.Color.White;
+            this.txtFacebook.Location = new System.Drawing.Point(87, 184);
+            this.txtFacebook.Name = "txtFacebook";
+            this.txtFacebook.Size = new System.Drawing.Size(156, 20);
+            this.txtFacebook.TabIndex = 9;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(424, 161);
+            this.label12.Location = new System.Drawing.Point(15, 188);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "บาท";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 44;
+            this.label12.Text = "Facebook :";
             // 
-            // label10
+            // txtLine
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(252, 186);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "ราคาขาย :";
+            this.txtLine.BackColor = System.Drawing.Color.White;
+            this.txtLine.Location = new System.Drawing.Point(308, 157);
+            this.txtLine.Name = "txtLine";
+            this.txtLine.Size = new System.Drawing.Size(156, 20);
+            this.txtLine.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(261, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Line :";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.White;
+            this.txtEmail.Location = new System.Drawing.Point(87, 158);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(156, 20);
+            this.txtEmail.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(39, 162);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "อีเมล :";
+            // 
+            // txtFax
+            // 
+            this.txtFax.BackColor = System.Drawing.Color.White;
+            this.txtFax.Location = new System.Drawing.Point(308, 131);
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(156, 20);
+            this.txtFax.TabIndex = 6;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(252, 160);
+            this.label9.Location = new System.Drawing.Point(246, 136);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "ราคาซื้อ :";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "โทรสาร :";
             // 
-            // btnUnit
+            // txtTel
             // 
-            this.btnUnit.Image = ((System.Drawing.Image)(resources.GetObject("btnUnit.Image")));
-            this.btnUnit.Location = new System.Drawing.Point(215, 183);
-            this.btnUnit.Name = "btnUnit";
-            this.btnUnit.Size = new System.Drawing.Size(29, 22);
-            this.btnUnit.TabIndex = 21;
-            this.btnUnit.UseVisualStyleBackColor = true;
-            this.btnUnit.Click += new System.EventHandler(this.btnUnit_Click);
+            this.txtTel.BackColor = System.Drawing.Color.White;
+            this.txtTel.Location = new System.Drawing.Point(87, 132);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(156, 20);
+            this.txtTel.TabIndex = 5;
             // 
-            // btnCategory
+            // label10
             // 
-            this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
-            this.btnCategory.Location = new System.Drawing.Point(215, 156);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Size = new System.Drawing.Size(29, 22);
-            this.btnCategory.TabIndex = 20;
-            this.btnCategory.UseVisualStyleBackColor = true;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(22, 136);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 13);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "โทรศัพท์ :";
             // 
-            // cbUnit
+            // txtTaxId
             // 
-            this.cbUnit.DisplayMember = "name";
-            this.cbUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbUnit.FormattingEnabled = true;
-            this.cbUnit.Location = new System.Drawing.Point(88, 184);
-            this.cbUnit.Name = "cbUnit";
-            this.cbUnit.Size = new System.Drawing.Size(125, 21);
-            this.cbUnit.TabIndex = 5;
-            this.cbUnit.ValueMember = "id";
+            this.txtTaxId.BackColor = System.Drawing.Color.White;
+            this.txtTaxId.Location = new System.Drawing.Point(378, 22);
+            this.txtTaxId.Name = "txtTaxId";
+            this.txtTaxId.Size = new System.Drawing.Size(156, 20);
+            this.txtTaxId.TabIndex = 2;
             // 
-            // cbCategory
+            // label2
             // 
-            this.cbCategory.DisplayMember = "name";
-            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(88, 157);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(125, 21);
-            this.cbCategory.TabIndex = 4;
-            this.cbCategory.ValueMember = "id";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(255, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 13);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "เลขประจำตัวผู้เสียภาษี :";
             // 
-            // txtDescription
+            // txtCode
             // 
-            this.txtDescription.BackColor = System.Drawing.Color.White;
-            this.txtDescription.Location = new System.Drawing.Point(88, 72);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(387, 54);
-            this.txtDescription.TabIndex = 2;
+            this.txtCode.BackColor = System.Drawing.Color.White;
+            this.txtCode.Enabled = false;
+            this.txtCode.Location = new System.Drawing.Point(88, 22);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.ReadOnly = true;
+            this.txtCode.Size = new System.Drawing.Size(156, 20);
+            this.txtCode.TabIndex = 1;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BackColor = System.Drawing.Color.White;
+            this.txtAddress.Location = new System.Drawing.Point(88, 72);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(446, 54);
+            this.txtAddress.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 73);
+            this.label3.Location = new System.Drawing.Point(43, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 17;
-            this.label3.Text = "รายละเอียด :";
+            this.label3.Text = "ที่อยู่ :";
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(41, 188);
+            this.Label7.Location = new System.Drawing.Point(66, 188);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(41, 13);
+            this.Label7.Size = new System.Drawing.Size(10, 13);
             this.Label7.TabIndex = 15;
-            this.Label7.Text = "หน่วย :";
+            this.Label7.Text = " ";
             // 
-            // Label5
+            // txtName
             // 
-            this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(16, 160);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(66, 13);
-            this.Label5.TabIndex = 16;
-            this.Label5.Text = "หมวดสินค้า :";
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.BackColor = System.Drawing.Color.White;
-            this.txtProductName.Location = new System.Drawing.Point(88, 47);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(387, 20);
-            this.txtProductName.TabIndex = 1;
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(88, 47);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(446, 20);
+            this.txtName.TabIndex = 3;
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(30, 50);
+            this.Label4.Location = new System.Drawing.Point(50, 50);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(52, 13);
+            this.Label4.Size = new System.Drawing.Size(26, 13);
             this.Label4.TabIndex = 12;
-            this.Label4.Text = "ชื่อสินค้า :";
+            this.Label4.Text = "ชื่อ :";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 26);
+            this.label8.Location = new System.Drawing.Point(12, 26);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.Size = new System.Drawing.Size(64, 13);
             this.label8.TabIndex = 10;
-            this.label8.Text = "รหัสสินค้า :";
+            this.label8.Text = "รหัสสมาชิก :";
             // 
             // panel2
             // 
@@ -462,34 +456,7 @@
             this.mainGrid.CellClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellClick);
             this.mainGrid.CellDoubleClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellDoubleClick);
             // 
-            // btnEx
-            // 
-            this.btnEx.Image = ((System.Drawing.Image)(resources.GetObject("btnEx.Image")));
-            this.btnEx.Location = new System.Drawing.Point(242, 18);
-            this.btnEx.Name = "btnEx";
-            this.btnEx.Size = new System.Drawing.Size(22, 22);
-            this.btnEx.TabIndex = 3;
-            this.btnEx.UseVisualStyleBackColor = true;
-            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
-            // 
-            // txtBarcode
-            // 
-            this.txtBarcode.BackColor = System.Drawing.Color.White;
-            this.txtBarcode.Location = new System.Drawing.Point(319, 22);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(156, 20);
-            this.txtBarcode.TabIndex = 35;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(255, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "บาร์โค้ด :";
-            // 
-            // FormProductList
+            // FormCustomerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -497,8 +464,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "FormProductList";
-            this.Text = "รายการสินค้า";
+            this.Name = "FormCustomerList";
+            this.Text = "รายการสมาชิก";
             this.Load += new System.EventHandler(this.FormProductList_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -532,28 +499,27 @@
         private System.Windows.Forms.Label lblRetCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearch;
-        internal System.Windows.Forms.TextBox txtDescription;
+        internal System.Windows.Forms.TextBox txtAddress;
         internal System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.TextBox txtProductName;
+        internal System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnUnit;
-        private System.Windows.Forms.Button btnCategory;
-        private System.Windows.Forms.ComboBox cbUnit;
-        private System.Windows.Forms.ComboBox cbCategory;
-        internal System.Windows.Forms.Label label10;
-        internal System.Windows.Forms.Label label9;
-        internal System.Windows.Forms.Label label13;
-        internal System.Windows.Forms.Label label12;
-        internal System.Windows.Forms.TextBox txtProductCode;
-        internal System.Windows.Forms.TextBox txtSalePrice;
-        internal System.Windows.Forms.TextBox txtPurchasePrice;
-        internal System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbType;
+        internal System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Button btnEx;
-        internal System.Windows.Forms.TextBox txtBarcode;
+        internal System.Windows.Forms.TextBox txtTaxId;
         internal System.Windows.Forms.Label label2;
+        internal System.Windows.Forms.TextBox txtContact;
+        internal System.Windows.Forms.Label label11;
+        internal System.Windows.Forms.TextBox txtFacebook;
+        internal System.Windows.Forms.Label label12;
+        internal System.Windows.Forms.TextBox txtLine;
+        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.TextBox txtEmail;
+        internal System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.TextBox txtFax;
+        internal System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.TextBox txtTel;
+        internal System.Windows.Forms.Label label10;
     }
 }

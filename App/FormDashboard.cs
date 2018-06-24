@@ -18,8 +18,8 @@ namespace PosX.App
         public FormDashboard()
         {
             InitializeComponent();
-            var orderInfo = new Product.OrderInfoCollection();
-            mainGrid.DataSource = orderInfo.OrdersListDetails;
+            //var orderInfo = new Product.OrderInfoCollection();
+            //mainGrid.DataSource = orderInfo.OrdersListDetails;
         }
 
         private void FormDashboard_FormClosing(object sender, FormClosingEventArgs e)

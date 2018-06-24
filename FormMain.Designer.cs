@@ -30,29 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
+            this.pOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายไดToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.รายจายToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.สนคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.สมาชกToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ตงคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.อนๆToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ขายToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายไดอนๆToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ขายสดToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ใบสงซอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.รายจายToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ซอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายจายToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ใบเสนอราคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.สนคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.ความเคลอนไหวToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.นบสตอคToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.สมาชกToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.ตงคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ตงคาเอกสารToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ตงคากจการToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ตงคาการพมพToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mProduct = new System.Windows.Forms.ToolStripMenuItem();
-            this.mBarcode = new System.Windows.Forms.ToolStripMenuItem();
+            this.อนๆToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.พมพบารโคดToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.พนกงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ลกคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.เกยวกบโปรแกรมToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +59,7 @@
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pOSToolStripMenuItem,
             this.รายไดToolStripMenuItem,
             this.รายจายToolStripMenuItem,
             this.สนคาToolStripMenuItem,
@@ -72,59 +72,105 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // dockPanel
+            // pOSToolStripMenuItem
             // 
-            this.dockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dockPanel.DockBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dockPanel.DockBottomPortion = 150D;
-            this.dockPanel.DockLeftPortion = 200D;
-            this.dockPanel.DockRightPortion = 200D;
-            this.dockPanel.DockTopPortion = 150D;
-            this.dockPanel.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.dockPanel.Location = new System.Drawing.Point(0, 29);
-            this.dockPanel.Name = "dockPanel";
-            this.dockPanel.RightToLeftLayout = true;
-            this.dockPanel.Size = new System.Drawing.Size(1176, 681);
-            this.dockPanel.TabIndex = 2;
+            this.pOSToolStripMenuItem.Name = "pOSToolStripMenuItem";
+            this.pOSToolStripMenuItem.Size = new System.Drawing.Size(64, 25);
+            this.pOSToolStripMenuItem.Text = "จุดขาย";
             // 
             // รายไดToolStripMenuItem
             // 
             this.รายไดToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ใบเสนอราคาToolStripMenuItem,
             this.ขายToolStripMenuItem,
-            this.ขายสดToolStripMenuItem,
             this.รายไดอนๆToolStripMenuItem});
             this.รายไดToolStripMenuItem.Name = "รายไดToolStripMenuItem";
             this.รายไดToolStripMenuItem.Size = new System.Drawing.Size(57, 25);
             this.รายไดToolStripMenuItem.Text = "รายได้";
             // 
+            // ขายToolStripMenuItem
+            // 
+            this.ขายToolStripMenuItem.Name = "ขายToolStripMenuItem";
+            this.ขายToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.ขายToolStripMenuItem.Text = "ขาย";
+            // 
+            // รายไดอนๆToolStripMenuItem
+            // 
+            this.รายไดอนๆToolStripMenuItem.Name = "รายไดอนๆToolStripMenuItem";
+            this.รายไดอนๆToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.รายไดอนๆToolStripMenuItem.Text = "รายได้อื่นๆ";
+            // 
             // รายจายToolStripMenuItem
             // 
             this.รายจายToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ใบสงซอToolStripMenuItem,
             this.ซอToolStripMenuItem,
             this.รายจายToolStripMenuItem1});
             this.รายจายToolStripMenuItem.Name = "รายจายToolStripMenuItem";
             this.รายจายToolStripMenuItem.Size = new System.Drawing.Size(67, 25);
             this.รายจายToolStripMenuItem.Text = "รายจ่าย";
             // 
+            // ซอToolStripMenuItem
+            // 
+            this.ซอToolStripMenuItem.Name = "ซอToolStripMenuItem";
+            this.ซอToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.ซอToolStripMenuItem.Text = "ซื้อ/รับ";
+            // 
+            // รายจายToolStripMenuItem1
+            // 
+            this.รายจายToolStripMenuItem1.Name = "รายจายToolStripMenuItem1";
+            this.รายจายToolStripMenuItem1.Size = new System.Drawing.Size(150, 26);
+            this.รายจายToolStripMenuItem1.Text = "รายจ่ายอื่นๆ";
+            // 
             // สนคาToolStripMenuItem
             // 
             this.สนคาToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mProduct,
-            this.mBarcode});
+            this.ความเคลอนไหวToolStripMenuItem,
+            this.นบสตอคToolStripMenuItem});
             this.สนคาToolStripMenuItem.Name = "สนคาToolStripMenuItem";
             this.สนคาToolStripMenuItem.Size = new System.Drawing.Size(57, 25);
             this.สนคาToolStripMenuItem.Text = "สินค้า";
             // 
+            // mProduct
+            // 
+            this.mProduct.Name = "mProduct";
+            this.mProduct.Size = new System.Drawing.Size(172, 26);
+            this.mProduct.Text = "สินค้า";
+            this.mProduct.Click += new System.EventHandler(this.mProduct_Click);
+            // 
+            // ความเคลอนไหวToolStripMenuItem
+            // 
+            this.ความเคลอนไหวToolStripMenuItem.Name = "ความเคลอนไหวToolStripMenuItem";
+            this.ความเคลอนไหวToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.ความเคลอนไหวToolStripMenuItem.Text = "ความเคลื่อนไหว";
+            // 
+            // นบสตอคToolStripMenuItem
+            // 
+            this.นบสตอคToolStripMenuItem.Name = "นบสตอคToolStripMenuItem";
+            this.นบสตอคToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.นบสตอคToolStripMenuItem.Text = "นับสต๊อค";
+            // 
             // สมาชกToolStripMenuItem
             // 
             this.สมาชกToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.พนกงานToolStripMenuItem,
-            this.ลกคาToolStripMenuItem});
+            this.mnCustomer,
+            this.mnUser});
             this.สมาชกToolStripMenuItem.Name = "สมาชกToolStripMenuItem";
             this.สมาชกToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.สมาชกToolStripMenuItem.Text = "สมาชิก";
+            // 
+            // mnCustomer
+            // 
+            this.mnCustomer.Name = "mnCustomer";
+            this.mnCustomer.Size = new System.Drawing.Size(180, 26);
+            this.mnCustomer.Text = "ลูกค้า";
+            this.mnCustomer.Click += new System.EventHandler(this.mnCustomer_Click);
+            // 
+            // mnUser
+            // 
+            this.mnUser.Name = "mnUser";
+            this.mnUser.Size = new System.Drawing.Size(180, 26);
+            this.mnUser.Text = "พนักงาน";
+            this.mnUser.Click += new System.EventHandler(this.mnUser_Click);
             // 
             // ตงคาToolStripMenuItem
             // 
@@ -135,57 +181,6 @@
             this.ตงคาToolStripMenuItem.Name = "ตงคาToolStripMenuItem";
             this.ตงคาToolStripMenuItem.Size = new System.Drawing.Size(53, 25);
             this.ตงคาToolStripMenuItem.Text = "ตั้งค่า";
-            // 
-            // อนๆToolStripMenuItem
-            // 
-            this.อนๆToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.พมพบารโคดToolStripMenuItem,
-            this.เกยวกบโปรแกรมToolStripMenuItem});
-            this.อนๆToolStripMenuItem.Name = "อนๆToolStripMenuItem";
-            this.อนๆToolStripMenuItem.Size = new System.Drawing.Size(47, 25);
-            this.อนๆToolStripMenuItem.Text = "อื่นๆ";
-            // 
-            // ขายToolStripMenuItem
-            // 
-            this.ขายToolStripMenuItem.Name = "ขายToolStripMenuItem";
-            this.ขายToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.ขายToolStripMenuItem.Text = "ขาย";
-            // 
-            // รายไดอนๆToolStripMenuItem
-            // 
-            this.รายไดอนๆToolStripMenuItem.Name = "รายไดอนๆToolStripMenuItem";
-            this.รายไดอนๆToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.รายไดอนๆToolStripMenuItem.Text = "รายได้อื่นๆ";
-            // 
-            // ขายสดToolStripMenuItem
-            // 
-            this.ขายสดToolStripMenuItem.Name = "ขายสดToolStripMenuItem";
-            this.ขายสดToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.ขายสดToolStripMenuItem.Text = "ขายสด";
-            // 
-            // ใบสงซอToolStripMenuItem
-            // 
-            this.ใบสงซอToolStripMenuItem.Name = "ใบสงซอToolStripMenuItem";
-            this.ใบสงซอToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.ใบสงซอToolStripMenuItem.Text = "ใบสั่งซื้อ";
-            // 
-            // ซอToolStripMenuItem
-            // 
-            this.ซอToolStripMenuItem.Name = "ซอToolStripMenuItem";
-            this.ซอToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.ซอToolStripMenuItem.Text = "ซื้อ/รับ";
-            // 
-            // รายจายToolStripMenuItem1
-            // 
-            this.รายจายToolStripMenuItem1.Name = "รายจายToolStripMenuItem1";
-            this.รายจายToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
-            this.รายจายToolStripMenuItem1.Text = "รายจ่ายอื่นๆ";
-            // 
-            // ใบเสนอราคาToolStripMenuItem
-            // 
-            this.ใบเสนอราคาToolStripMenuItem.Name = "ใบเสนอราคาToolStripMenuItem";
-            this.ใบเสนอราคาToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.ใบเสนอราคาToolStripMenuItem.Text = "ใบเสนอราคา";
             // 
             // ตงคาเอกสารToolStripMenuItem
             // 
@@ -205,18 +200,14 @@
             this.ตงคาการพมพToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.ตงคาการพมพToolStripMenuItem.Text = "ตั้งค่าการพิมพ์";
             // 
-            // mProduct
+            // อนๆToolStripMenuItem
             // 
-            this.mProduct.Name = "mProduct";
-            this.mProduct.Size = new System.Drawing.Size(152, 26);
-            this.mProduct.Text = "สินค้า";
-            this.mProduct.Click += new System.EventHandler(this.mProduct_Click);
-            // 
-            // mBarcode
-            // 
-            this.mBarcode.Name = "mBarcode";
-            this.mBarcode.Size = new System.Drawing.Size(152, 26);
-            this.mBarcode.Text = "บาร์โค้ด";
+            this.อนๆToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.พมพบารโคดToolStripMenuItem,
+            this.เกยวกบโปรแกรมToolStripMenuItem});
+            this.อนๆToolStripMenuItem.Name = "อนๆToolStripMenuItem";
+            this.อนๆToolStripMenuItem.Size = new System.Drawing.Size(47, 25);
+            this.อนๆToolStripMenuItem.Text = "อื่นๆ";
             // 
             // พมพบารโคดToolStripMenuItem
             // 
@@ -224,23 +215,26 @@
             this.พมพบารโคดToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.พมพบารโคดToolStripMenuItem.Text = "พิมพ์บารโค้ด";
             // 
-            // พนกงานToolStripMenuItem
-            // 
-            this.พนกงานToolStripMenuItem.Name = "พนกงานToolStripMenuItem";
-            this.พนกงานToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.พนกงานToolStripMenuItem.Text = "พนักงาน";
-            // 
-            // ลกคาToolStripMenuItem
-            // 
-            this.ลกคาToolStripMenuItem.Name = "ลกคาToolStripMenuItem";
-            this.ลกคาToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.ลกคาToolStripMenuItem.Text = "ลูกค้า";
-            // 
             // เกยวกบโปรแกรมToolStripMenuItem
             // 
             this.เกยวกบโปรแกรมToolStripMenuItem.Name = "เกยวกบโปรแกรมToolStripMenuItem";
             this.เกยวกบโปรแกรมToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.เกยวกบโปรแกรมToolStripMenuItem.Text = "เกี่ยวกับโปรแกรม";
+            // 
+            // dockPanel
+            // 
+            this.dockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dockPanel.DockBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dockPanel.DockBottomPortion = 150D;
+            this.dockPanel.DockLeftPortion = 200D;
+            this.dockPanel.DockRightPortion = 200D;
+            this.dockPanel.DockTopPortion = 150D;
+            this.dockPanel.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.dockPanel.Location = new System.Drawing.Point(0, 29);
+            this.dockPanel.Name = "dockPanel";
+            this.dockPanel.RightToLeftLayout = true;
+            this.dockPanel.Size = new System.Drawing.Size(1176, 681);
+            this.dockPanel.TabIndex = 2;
             // 
             // FormMain
             // 
@@ -276,25 +270,22 @@
         private System.Windows.Forms.ToolStripMenuItem สนคาToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem สมาชกToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ตงคาToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ใบเสนอราคาToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ขายToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ขายสดToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายไดอนๆToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ใบสงซอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ซอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายจายToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mProduct;
-        private System.Windows.Forms.ToolStripMenuItem mBarcode;
-        private System.Windows.Forms.ToolStripMenuItem พนกงานToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ลกคาToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnUser;
+        private System.Windows.Forms.ToolStripMenuItem mnCustomer;
         private System.Windows.Forms.ToolStripMenuItem ตงคาเอกสารToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ตงคากจการToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ตงคาการพมพToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem อนๆToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem พมพบารโคดToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem เกยวกบโปรแกรมToolStripMenuItem;
-
-
+        private System.Windows.Forms.ToolStripMenuItem ความเคลอนไหวToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem นบสตอคToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pOSToolStripMenuItem;
     }
 }
 

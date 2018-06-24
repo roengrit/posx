@@ -122,6 +122,14 @@
     <Compile Include="App\FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Member\FormCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Member\FormCustomerList.Designer.cs">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Member\Member.cs" />
+    <Compile Include="App\Member\MemberRepository.cs" />
     <Compile Include="App\Normal\FormNormalMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,8 +144,16 @@
     <Compile Include="App\Product\FormProductList.Designer.cs">
       <DependentUpon>FormProductList.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Product\OrderInfoCollection.cs" />
-    <Compile Include="App\Product\ProductModel.cs" />
+    <Compile Include="App\Product\Product.cs" />
+    <Compile Include="App\Product\ProductRepository.cs" />
+    <Compile Include="App\User\FormUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\User\FormUserList.Designer.cs">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\User\User.cs" />
+    <Compile Include="App\User\UserRepository.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +165,17 @@
     <EmbeddedResource Include="App\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Member\FormCustomerList.resx">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Normal\FormNormalMaster.resx">
       <DependentUpon>FormNormalMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Product\FormProductList.resx">
       <DependentUpon>FormProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\User\FormUserList.resx">
+      <DependentUpon>FormUserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

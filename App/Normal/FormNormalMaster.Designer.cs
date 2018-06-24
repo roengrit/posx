@@ -48,6 +48,7 @@
             this.mainGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnEx = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -65,24 +66,25 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(346, 112);
+            this.panel1.Size = new System.Drawing.Size(372, 112);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnEx);
             this.groupBox1.Controls.Add(this.lblRetCount);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Location = new System.Drawing.Point(0, 65);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(346, 47);
+            this.groupBox1.Size = new System.Drawing.Size(372, 47);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // lblRetCount
             // 
             this.lblRetCount.AutoSize = true;
-            this.lblRetCount.Location = new System.Drawing.Point(244, 20);
+            this.lblRetCount.Location = new System.Drawing.Point(278, 20);
             this.lblRetCount.Name = "lblRetCount";
             this.lblRetCount.Size = new System.Drawing.Size(88, 13);
             this.lblRetCount.TabIndex = 8;
@@ -136,7 +138,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 1, 5);
-            this.toolStrip1.Size = new System.Drawing.Size(346, 36);
+            this.toolStrip1.Size = new System.Drawing.Size(372, 36);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -206,7 +208,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 112);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(346, 317);
+            this.panel2.Size = new System.Drawing.Size(372, 317);
             this.panel2.TabIndex = 1;
             // 
             // mainGrid
@@ -221,11 +223,12 @@
             this.mainGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainGrid.Location = new System.Drawing.Point(0, 0);
             this.mainGrid.Name = "mainGrid";
-            this.mainGrid.Size = new System.Drawing.Size(346, 276);
+            this.mainGrid.Size = new System.Drawing.Size(372, 276);
             this.mainGrid.TabIndex = 3;
             this.mainGrid.AutoGeneratingColumn += new Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnEventHandler(this.mainGrid_AutoGeneratingColumn);
             this.mainGrid.QueryRowStyle += new Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventHandler(this.mainGrid_QueryRowStyle);
             this.mainGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.mainGrid_SelectionChanged);
+            this.mainGrid.CellClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellClick);
             this.mainGrid.CellDoubleClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellDoubleClick);
             // 
             // groupBox2
@@ -234,7 +237,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox2.Location = new System.Drawing.Point(0, 276);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(346, 41);
+            this.groupBox2.Size = new System.Drawing.Size(372, 41);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -247,11 +250,21 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "ดับเบิ้ลคลิกเพื่อแก้ไข";
             // 
+            // btnEx
+            // 
+            this.btnEx.Image = ((System.Drawing.Image)(resources.GetObject("btnEx.Image")));
+            this.btnEx.Location = new System.Drawing.Point(239, 16);
+            this.btnEx.Name = "btnEx";
+            this.btnEx.Size = new System.Drawing.Size(22, 22);
+            this.btnEx.TabIndex = 9;
+            this.btnEx.UseVisualStyleBackColor = true;
+            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
+            // 
             // FormNormalMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 429);
+            this.ClientSize = new System.Drawing.Size(372, 429);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -296,5 +309,6 @@
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnEx;
     }
 }
