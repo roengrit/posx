@@ -30,7 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNormalMaster));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblRetCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnCancel = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -38,21 +44,15 @@
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.mainGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblRetCount = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,130 +60,13 @@
             // 
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtDescription);
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 112);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.mainGrid);
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 112);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(346, 317);
-            this.panel2.TabIndex = 1;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(63, 28);
-            this.btnSave.Text = "บันทึก";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(64, 28);
-            this.btnCancel.Text = "ยกเลิก";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(53, 28);
-            this.btnAdd.Text = "เพิ่ม";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(48, 28);
-            this.btnDelete.Text = "ลบ";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(80, 28);
-            this.btnClose.Text = "ปิดหน้าจอ";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSave,
-            this.btnCancel,
-            this.toolStripSeparator1,
-            this.btnAdd,
-            this.btnDelete,
-            this.toolStripSeparator2,
-            this.btnClose});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 1, 5);
-            this.toolStrip1.Size = new System.Drawing.Size(346, 36);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // mainGrid
-            // 
-            this.mainGrid.AccessibleName = "Table";
-            this.mainGrid.AllowDraggingColumns = true;
-            this.mainGrid.AllowEditing = false;
-            this.mainGrid.AllowResizingColumns = true;
-            this.mainGrid.AllowResizingHiddenColumns = true;
-            this.mainGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            this.mainGrid.BackColor = System.Drawing.SystemColors.Window;
-            this.mainGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainGrid.Location = new System.Drawing.Point(0, 0);
-            this.mainGrid.Name = "mainGrid";
-            this.mainGrid.Size = new System.Drawing.Size(346, 276);
-            this.mainGrid.TabIndex = 3;
-            this.mainGrid.AutoGeneratingColumn += new Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnEventHandler(this.mainGrid_AutoGeneratingColumn);
-            this.mainGrid.QueryRowStyle += new Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventHandler(this.mainGrid_QueryRowStyle);
-            this.mainGrid.CellDoubleClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellDoubleClick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "รายละเอียด";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(76, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(254, 20);
-            this.textBox2.TabIndex = 6;
             // 
             // groupBox1
             // 
@@ -222,6 +105,129 @@
             this.txtSearch.TabIndex = 1;
             this.txtSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyUp);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "รายละเอียด";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Enabled = false;
+            this.txtDescription.Location = new System.Drawing.Point(76, 39);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(254, 20);
+            this.txtDescription.TabIndex = 6;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnSave,
+            this.btnCancel,
+            this.toolStripSeparator1,
+            this.btnAdd,
+            this.btnDelete,
+            this.toolStripSeparator2,
+            this.btnClose});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 1, 5);
+            this.toolStrip1.Size = new System.Drawing.Size(346, 36);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Enabled = false;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(63, 28);
+            this.btnSave.Text = "บันทึก";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Enabled = false;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(64, 28);
+            this.btnCancel.Text = "ยกเลิก";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(53, 28);
+            this.btnAdd.Text = "เพิ่ม";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(48, 28);
+            this.btnDelete.Text = "ลบ";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(80, 28);
+            this.btnClose.Text = "ปิดหน้าจอ";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.mainGrid);
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 112);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(346, 317);
+            this.panel2.TabIndex = 1;
+            // 
+            // mainGrid
+            // 
+            this.mainGrid.AccessibleName = "Table";
+            this.mainGrid.AllowDraggingColumns = true;
+            this.mainGrid.AllowEditing = false;
+            this.mainGrid.AllowResizingColumns = true;
+            this.mainGrid.AllowResizingHiddenColumns = true;
+            this.mainGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
+            this.mainGrid.BackColor = System.Drawing.SystemColors.Window;
+            this.mainGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainGrid.Location = new System.Drawing.Point(0, 0);
+            this.mainGrid.Name = "mainGrid";
+            this.mainGrid.Size = new System.Drawing.Size(346, 276);
+            this.mainGrid.TabIndex = 3;
+            this.mainGrid.AutoGeneratingColumn += new Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnEventHandler(this.mainGrid_AutoGeneratingColumn);
+            this.mainGrid.QueryRowStyle += new Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventHandler(this.mainGrid_QueryRowStyle);
+            this.mainGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.mainGrid_SelectionChanged);
+            this.mainGrid.CellDoubleClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellDoubleClick);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label4);
@@ -257,12 +263,12 @@
             this.Load += new System.EventHandler(this.FormNormalMaster_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -287,7 +293,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
     }

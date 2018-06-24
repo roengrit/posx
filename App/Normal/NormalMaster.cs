@@ -6,12 +6,12 @@ using System.Text;
 
 namespace PosX.App.Normal
 {
-    public interface INormalMasterRepository
-    {
-        NormalMaster GetNormalMaster(int id , string table );
-        void SaveNormalMaster(NormalMaster normalMaster , string table);
-        List<NormalMaster> GetNormalMasterList(string searchTxt, string table);
-    }
+    //public interface INormalMasterRepository
+    //{
+    //    NormalMaster GetNormalMaster(int id , string table );
+    //    void SaveNormalMaster(NormalMaster normalMaster , string table);
+    //    List<NormalMaster> GetNormalMasterList(string searchTxt, string table);
+    //}
 
     public class NormalMaster
     {

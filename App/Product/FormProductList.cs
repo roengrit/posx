@@ -54,6 +54,7 @@ namespace PosX.App.Product
             var frm = new App.Normal.FormNormalMaster("ic_category");
             frm.Text = "จัดการหมวดหมู่";
             frm.ShowDialog();
+            cbCategory.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList(string.Empty, "ic_category");
         }
 
         private void btnUnit_Click(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace PosX.App.Product
             var frm = new App.Normal.FormNormalMaster("ic_unit");
             frm.Text = "จัดการหน่วย";
             frm.ShowDialog();
+            cbUnit.DataSource = new App.Normal.NormalMasterRepository().GetNormalMasterList(string.Empty, "ic_unit");
         }
     }
 }
