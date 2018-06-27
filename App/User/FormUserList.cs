@@ -115,7 +115,7 @@ namespace PosX.App.User
             this.btnAdd.Enabled = false;
             this.btnDelete.Enabled = false;
             this.itemAction.Id = 0;
-
+            txtUserCode.Enabled = true;
             this.txtSearch.Text = string.Empty;
             this.mainGrid.ClearSelection();
             txtUserCode.Text = string.Empty;
@@ -137,6 +137,7 @@ namespace PosX.App.User
             this.btnDelete.Enabled = true;
             this.itemAction.Id = 0;
             this.txtSearch.Text = string.Empty;
+            txtUserCode.Enabled = true;
             this.mainGrid.ClearSelection();
             txtUserCode.Text = string.Empty;
             txtUserName.Text = string.Empty;
@@ -164,6 +165,7 @@ namespace PosX.App.User
             if (e.DataRow.Index == 0) return;
             this.AddOrEdit();
             this.itemAction = e.DataRow.RowData as User;
+            txtUserCode.Enabled = false;
             txtUserCode.Text = this.itemAction.Code;
             txtUserName.Text = this.itemAction.Name;
             txtEmail.Text = this.itemAction.Email;
@@ -239,6 +241,7 @@ namespace PosX.App.User
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (itemAction.Code == "admin") return;
             if (this.itemSelection != null)
                 if (this.itemSelection.Id > 0)
                 {

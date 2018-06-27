@@ -32,6 +32,10 @@ namespace PosX.App.Member
         public string Facebook { get; set; }
         [Display(Name = "ติดต่อ")]
         public string Contact { get; set; }
+        [Display(Name = "ชื่อสาขา")]
+        public string BranchName { get; set; }
+        [Display(Name = "เลขที่สาขา")]
+        public string BranchNo { get; set; }
 
     }
 }

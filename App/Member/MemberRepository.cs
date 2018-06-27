@@ -21,10 +21,14 @@ namespace PosX.App.Member
                                        member.email,
                                        member.line,
                                        member.facebook,
-                                       member.contact 
+                                       member.contact,
+                                       member.branch_name,
+                                       member.branch_no
                              from member 
                              where lower(member.code) like lower('%" + searchTxt + "%')" +
-                                  " or lower(member.name) like lower('%" + searchTxt + "%')";
+                                  " or lower(member.name) like lower('%" + searchTxt + "%')" +
+                                  " or lower(member.tel) like lower('%" + searchTxt + "%')" +
+                                  " or lower(member.tax_id) like lower('%" + searchTxt + "%')";
 
             using (var cnn = DbConnection())
             {
@@ -41,8 +45,8 @@ namespace PosX.App.Member
                 try
                 {
                     cnn.Open();
-                    cnn.Execute(@"INSERT INTO member(code,tax_id,name,address,tel,fax,email,line,facebook,contact)
-                                                  VALUES(@code,@tax_id,@name,@address,@tel,@fax,@email,@line,@facebook,@contact);",
+                    cnn.Execute(@"INSERT INTO member(code,tax_id,name,address,tel,fax,email,line,facebook,contact,branch_name,branch_no)
+                                                  VALUES(@code,@tax_id,@name,@address,@tel,@fax,@email,@line,@facebook,@contact,@branch_name,@branch_no);",
                                   new
                                   {
                                       code = member.Code,
@@ -54,7 +58,9 @@ namespace PosX.App.Member
                                       email = member.Email,
                                       line = member.Line,
                                       facebook = member.Facebook,
-                                      contact = member.Contact
+                                      contact = member.Contact,
+                                      branch_name = member.BranchName,
+                                      branch_no = member.BranchNo
                                   });
                     return null;
                 }
@@ -72,7 +78,9 @@ namespace PosX.App.Member
                 try
                 {
                     cnn.Open();
-                    cnn.Execute(@"update member set code =@code,tax_id=@tax_id,name=@name,address=@address,tel=@tel,fax=@fax,email=@email,line=@line,facebook=@facebook,contact=@contact where id = @id",
+                    cnn.Execute(@"update member 
+                                        set code =@code,tax_id=@tax_id,name=@name,address=@address,tel=@tel,fax=@fax,email=@email,line=@line,facebook=@facebook,contact=@contact,branch_name=@branch_name,branch_no=@branch_no 
+                                  where id = @id",
                                   new
                                   {
                                       code = member.Code,
@@ -85,6 +93,8 @@ namespace PosX.App.Member
                                       line = member.Line,
                                       facebook = member.Facebook,
                                       contact = member.Contact,
+                                      branch_name = member.BranchName,
+                                      branch_no = member.BranchNo,
                                       id = member.Id
                                   });
                     return null;

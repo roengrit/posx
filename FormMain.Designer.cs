@@ -35,7 +35,7 @@
             this.ขายToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายไดอนๆToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายจายToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ซอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnExpensePurchase = new System.Windows.Forms.ToolStripMenuItem();
             this.รายจายToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.สนคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mProduct = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,22 +102,23 @@
             // รายจายToolStripMenuItem
             // 
             this.รายจายToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ซอToolStripMenuItem,
+            this.mnExpensePurchase,
             this.รายจายToolStripMenuItem1});
             this.รายจายToolStripMenuItem.Name = "รายจายToolStripMenuItem";
             this.รายจายToolStripMenuItem.Size = new System.Drawing.Size(67, 25);
             this.รายจายToolStripMenuItem.Text = "รายจ่าย";
             // 
-            // ซอToolStripMenuItem
+            // mnExpensePurchase
             // 
-            this.ซอToolStripMenuItem.Name = "ซอToolStripMenuItem";
-            this.ซอToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
-            this.ซอToolStripMenuItem.Text = "ซื้อ/รับ";
+            this.mnExpensePurchase.Name = "mnExpensePurchase";
+            this.mnExpensePurchase.Size = new System.Drawing.Size(180, 26);
+            this.mnExpensePurchase.Text = "ซื้อ/รับ";
+            this.mnExpensePurchase.Click += new System.EventHandler(this.mnExpensePurchase_Click);
             // 
             // รายจายToolStripMenuItem1
             // 
             this.รายจายToolStripMenuItem1.Name = "รายจายToolStripMenuItem1";
-            this.รายจายToolStripMenuItem1.Size = new System.Drawing.Size(150, 26);
+            this.รายจายToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
             this.รายจายToolStripMenuItem1.Text = "รายจ่ายอื่นๆ";
             // 
             // สนคาToolStripMenuItem
@@ -161,14 +162,14 @@
             // mnCustomer
             // 
             this.mnCustomer.Name = "mnCustomer";
-            this.mnCustomer.Size = new System.Drawing.Size(180, 26);
+            this.mnCustomer.Size = new System.Drawing.Size(133, 26);
             this.mnCustomer.Text = "ลูกค้า";
             this.mnCustomer.Click += new System.EventHandler(this.mnCustomer_Click);
             // 
             // mnUser
             // 
             this.mnUser.Name = "mnUser";
-            this.mnUser.Size = new System.Drawing.Size(180, 26);
+            this.mnUser.Size = new System.Drawing.Size(133, 26);
             this.mnUser.Text = "พนักงาน";
             this.mnUser.Click += new System.EventHandler(this.mnUser_Click);
             // 
@@ -272,7 +273,7 @@
         private System.Windows.Forms.ToolStripMenuItem ตงคาToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ขายToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายไดอนๆToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ซอToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnExpensePurchase;
         private System.Windows.Forms.ToolStripMenuItem รายจายToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mProduct;
         private System.Windows.Forms.ToolStripMenuItem mnUser;

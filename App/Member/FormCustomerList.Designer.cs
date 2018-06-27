@@ -67,6 +67,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.txtBranchNo = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtBranchName = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -159,7 +164,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1432, 289);
+            this.panel1.Size = new System.Drawing.Size(1432, 313);
             this.panel1.TabIndex = 1;
             // 
             // groupBox2
@@ -169,9 +174,9 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 234);
+            this.groupBox2.Location = new System.Drawing.Point(0, 265);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1432, 55);
+            this.groupBox2.Size = new System.Drawing.Size(1432, 48);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "รายการสมาชิก";
@@ -215,6 +220,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtBranchNo);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txtBranchName);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtContact);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtFacebook);
@@ -240,7 +250,7 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.groupBox1.Size = new System.Drawing.Size(1432, 234);
+            this.groupBox1.Size = new System.Drawing.Size(1432, 265);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "รายละเอียดสมาขิก";
@@ -248,7 +258,7 @@
             // txtContact
             // 
             this.txtContact.BackColor = System.Drawing.Color.White;
-            this.txtContact.Location = new System.Drawing.Point(308, 183);
+            this.txtContact.Location = new System.Drawing.Point(319, 183);
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(226, 20);
             this.txtContact.TabIndex = 10;
@@ -256,7 +266,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(254, 188);
+            this.label11.Location = new System.Drawing.Point(274, 188);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 46;
@@ -273,7 +283,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 188);
+            this.label12.Location = new System.Drawing.Point(14, 188);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 13);
             this.label12.TabIndex = 44;
@@ -282,7 +292,7 @@
             // txtLine
             // 
             this.txtLine.BackColor = System.Drawing.Color.White;
-            this.txtLine.Location = new System.Drawing.Point(308, 157);
+            this.txtLine.Location = new System.Drawing.Point(319, 157);
             this.txtLine.Name = "txtLine";
             this.txtLine.Size = new System.Drawing.Size(156, 20);
             this.txtLine.TabIndex = 8;
@@ -290,7 +300,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(261, 162);
+            this.label5.Location = new System.Drawing.Point(281, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 42;
@@ -307,7 +317,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 162);
+            this.label6.Location = new System.Drawing.Point(38, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 40;
@@ -316,7 +326,7 @@
             // txtFax
             // 
             this.txtFax.BackColor = System.Drawing.Color.White;
-            this.txtFax.Location = new System.Drawing.Point(308, 131);
+            this.txtFax.Location = new System.Drawing.Point(319, 131);
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(156, 20);
             this.txtFax.TabIndex = 6;
@@ -324,7 +334,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(246, 136);
+            this.label9.Location = new System.Drawing.Point(266, 136);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 13);
             this.label9.TabIndex = 38;
@@ -341,7 +351,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(22, 136);
+            this.label10.Location = new System.Drawing.Point(21, 136);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 13);
             this.label10.TabIndex = 36;
@@ -386,7 +396,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 73);
+            this.label3.Location = new System.Drawing.Point(42, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 17;
@@ -412,7 +422,7 @@
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(50, 50);
+            this.Label4.Location = new System.Drawing.Point(49, 50);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(26, 13);
             this.Label4.TabIndex = 12;
@@ -421,7 +431,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 26);
+            this.label8.Location = new System.Drawing.Point(11, 26);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 13);
             this.label8.TabIndex = 10;
@@ -431,9 +441,9 @@
             // 
             this.panel2.Controls.Add(this.mainGrid);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 325);
+            this.panel2.Location = new System.Drawing.Point(0, 349);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1432, 203);
+            this.panel2.Size = new System.Drawing.Size(1432, 179);
             this.panel2.TabIndex = 2;
             // 
             // mainGrid
@@ -448,13 +458,56 @@
             this.mainGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainGrid.Location = new System.Drawing.Point(0, 0);
             this.mainGrid.Name = "mainGrid";
-            this.mainGrid.Size = new System.Drawing.Size(1432, 203);
+            this.mainGrid.Size = new System.Drawing.Size(1432, 179);
             this.mainGrid.TabIndex = 2;
             this.mainGrid.AutoGeneratingColumn += new Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnEventHandler(this.mainGrid_AutoGeneratingColumn);
             this.mainGrid.QueryRowStyle += new Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventHandler(this.mainGrid_QueryRowStyle);
             this.mainGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.mainGrid_SelectionChanged);
             this.mainGrid.CellClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellClick);
             this.mainGrid.CellDoubleClick += new Syncfusion.WinForms.DataGrid.Events.CellClickEventHandler(this.mainGrid_CellDoubleClick);
+            // 
+            // txtBranchNo
+            // 
+            this.txtBranchNo.BackColor = System.Drawing.Color.White;
+            this.txtBranchNo.Location = new System.Drawing.Point(320, 209);
+            this.txtBranchNo.Name = "txtBranchNo";
+            this.txtBranchNo.Size = new System.Drawing.Size(226, 20);
+            this.txtBranchNo.TabIndex = 48;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(255, 213);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "เลขที่สาขา :";
+            // 
+            // txtBranchName
+            // 
+            this.txtBranchName.BackColor = System.Drawing.Color.White;
+            this.txtBranchName.Location = new System.Drawing.Point(88, 210);
+            this.txtBranchName.Name = "txtBranchName";
+            this.txtBranchName.Size = new System.Drawing.Size(156, 20);
+            this.txtBranchName.TabIndex = 47;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(27, 213);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.TabIndex = 50;
+            this.label14.Text = "ชื่อสาขา :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(67, 214);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(10, 13);
+            this.label15.TabIndex = 49;
+            this.label15.Text = " ";
             // 
             // FormCustomerList
             // 
@@ -465,6 +518,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormCustomerList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "รายการสมาชิก";
             this.Load += new System.EventHandler(this.FormProductList_Load);
             this.toolStrip1.ResumeLayout(false);
@@ -521,5 +575,10 @@
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.TextBox txtTel;
         internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.TextBox txtBranchNo;
+        internal System.Windows.Forms.Label label13;
+        internal System.Windows.Forms.TextBox txtBranchName;
+        internal System.Windows.Forms.Label label14;
+        internal System.Windows.Forms.Label label15;
     }
 }

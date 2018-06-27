@@ -116,6 +116,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Entity\SqLiteBaseRepository.cs" />
+    <Compile Include="App\Expense\FormExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Expense\FormExpense.Designer.cs">
+      <DependentUpon>FormExpense.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="App\Member\FormCustomerList.Designer.cs">
       <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Member\FormSearchMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Member\FormSearchMember.Designer.cs">
+      <DependentUpon>FormSearchMember.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Member\Member.cs" />
     <Compile Include="App\Member\MemberRepository.cs" />
@@ -162,11 +174,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="App\Expense\FormExpense.resx">
+      <DependentUpon>FormExpense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Member\FormCustomerList.resx">
       <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Member\FormSearchMember.resx">
+      <DependentUpon>FormSearchMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Normal\FormNormalMaster.resx">
       <DependentUpon>FormNormalMaster.cs</DependentUpon>
@@ -209,6 +227,7 @@
     <Content Include="desk.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Income\" />
     <Folder Include="App\Report\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

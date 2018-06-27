@@ -33,7 +33,7 @@ namespace PosX.App.Member
 
         private void mainGrid_CurrentCellActivated(object sender, Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatedEventArgs e)
         {
-           
+
         }
 
         private void mainGrid_QueryRowStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventArgs e)
@@ -47,7 +47,7 @@ namespace PosX.App.Member
         private void FormProductList_Load(object sender, EventArgs e)
         {
             this.Search();
-        } 
+        }
 
         private void Search(string s = "")
         {
@@ -70,7 +70,7 @@ namespace PosX.App.Member
 
         private void mainGrid_AutoGeneratingColumn(object sender, Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnArgs e)
         {
-            if (e.Column.MappingName == "Id" )
+            if (e.Column.MappingName == "Id")
                 e.Cancel = true;
 
         }
@@ -95,6 +95,8 @@ namespace PosX.App.Member
             this.txtFax.Text = string.Empty;
             this.txtLine.Text = string.Empty;
             this.txtTel.Text = string.Empty;
+            this.txtBranchNo.Text = string.Empty;
+            this.txtBranchName.Text = string.Empty;
         }
 
         private void Cancel()
@@ -104,11 +106,11 @@ namespace PosX.App.Member
             this.btnAdd.Enabled = true;
             this.btnDelete.Enabled = true;
 
-            this.itemAction.Id = 0;       
+            this.itemAction.Id = 0;
             this.mainGrid.ClearSelection();
             this.txtCode.Text = string.Empty;
             this.txtName.Text = string.Empty;
-            this.txtTaxId.Text = string.Empty; 
+            this.txtTaxId.Text = string.Empty;
             this.txtAddress.Text = string.Empty;
             this.txtSearch.Text = string.Empty;
             this.txtContact.Text = string.Empty;
@@ -117,6 +119,8 @@ namespace PosX.App.Member
             this.txtFax.Text = string.Empty;
             this.txtLine.Text = string.Empty;
             this.txtTel.Text = string.Empty;
+            this.txtBranchNo.Text = string.Empty;
+            this.txtBranchName.Text = string.Empty;
 
         }
 
@@ -146,6 +150,8 @@ namespace PosX.App.Member
             this.txtEmail.Text = this.itemAction.Email;
             this.txtFacebook.Text = this.itemAction.Facebook;
             this.txtTel.Text = this.itemAction.Tel;
+            this.txtBranchNo.Text = this.itemAction.BranchNo;
+            this.txtBranchName.Text = this.itemAction.BranchName;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -163,7 +169,9 @@ namespace PosX.App.Member
                     Line = txtLine.Text,
                     Name = txtName.Text,
                     TaxId = txtTaxId.Text,
-                    Tel = txtTel.Text
+                    Tel = txtTel.Text,
+                    BranchName = txtBranchName.Text,
+                    BranchNo = txtBranchNo.Text
                 });
                 if (ex != null)
                 {
@@ -185,6 +193,8 @@ namespace PosX.App.Member
                     Name = txtName.Text,
                     TaxId = txtTaxId.Text,
                     Tel = txtTel.Text,
+                    BranchName = txtBranchName.Text,
+                    BranchNo = txtBranchNo.Text,
                     Id = itemAction.Id
                 });
                 if (ex != null)
@@ -262,7 +272,7 @@ namespace PosX.App.Member
             }
             catch (Exception)
             {
-                 
+
             }
         }
     }

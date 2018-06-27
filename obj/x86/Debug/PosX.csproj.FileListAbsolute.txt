@@ -70,3 +70,6 @@ C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.csproj.CoreCompil
 C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.csproj.CopyComplete
 C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\POSX.exe
 C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\POSX.pdb
+C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.csprojResolveAssemblyReference.cache
+C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.App.Expense.FormExpense.resources
+C:\Users\logon\Documents\Git\PosX\PosX\posx\obj\x86\Debug\PosX.App.Member.FormSearchMember.resources

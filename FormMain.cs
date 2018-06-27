@@ -51,5 +51,11 @@ namespace PosX
             var frm = new PosX.App.User.FormUserList();
             frm.Show(dockPanel);
         }
+
+        private void mnExpensePurchase_Click(object sender, EventArgs e)
+        {
+            var frm = new PosX.App.Expense.FormExpense();
+            frm.Show(dockPanel);
+        }
     }
 }
