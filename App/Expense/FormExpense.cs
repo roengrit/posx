@@ -43,5 +43,12 @@ namespace PosX.App.Expense
         {
             this.Close();
         }
+
+        private void FormExpense_Load(object sender, EventArgs e)
+        {
+            dtTime.Format = DateTimePickerFormat.Time;
+            dtTime.ShowUpDown = true;
+            cbTaxType.SelectedIndex = 2;
+        }
     }
 }
